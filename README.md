@@ -2,6 +2,9 @@
 
 
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](#license)
+[![Rust CI](https://github.com/HellButcher/osm-pbf-proto/actions/workflows/rust.yml/badge.svg)](https://github.com/HellButcher/osm-pbf-proto/actions/workflows/rust.yml)
+[![Crates.io](https://img.shields.io/crates/v/osm-pbf-proto.svg?label=osm-pbf-proto)](https://crates.io/crates/osm-pbf-proto)
+[![docs.rs](https://docs.rs/osm-pbf-proto/badge.svg)](https://docs.rs/osm-pbf-proto/)
 
 OpenStreetMap PBF-Format data-structures for `fileformat.proto` and `osmformat.proto`.
 

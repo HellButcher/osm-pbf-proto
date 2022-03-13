@@ -1,4 +1,9 @@
 // re-export of protobuf
-pub use protobuf;
+pub use prost;
 
-include!(concat!(env!("OUT_DIR"), "/protos-gen/mod.rs"));
+pub mod fileformat {
+    include!(concat!(env!("OUT_DIR"), "/fileformat.rs"));
+}
+pub mod osmformat {
+    include!(concat!(env!("OUT_DIR"), "/osmformat.rs"));
+}

@@ -23,7 +23,7 @@ SOFTWARE.
 syntax = "proto2";
 
 option java_package = "crosby.binary";
-package OSMPBF;
+package osmformat;
 
 /* OSM Binary file format
 

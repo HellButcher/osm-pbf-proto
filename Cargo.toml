@@ -10,7 +10,7 @@ readme = "README.md"
 edition = "2021"
 
 [dependencies]
-protobuf = "3.3.0"
+quick-protobuf = "0.8"
 
 [build-dependencies]
-protobuf-codegen = "3.3.0"
+pb-rs = "0.9.1"

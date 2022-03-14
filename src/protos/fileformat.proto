@@ -23,7 +23,7 @@ SOFTWARE.
 syntax = "proto2";
 
 option java_package = "crosby.binary";
-package OSMPBF;
+package fileformat;
 
 //protoc --java_out=../.. fileformat.proto
 
@@ -45,7 +45,7 @@ message Blob {
     bytes lzma_data = 4;
 
     // Formerly used for bzip2 compressed data. Deprecated in 2010.
-    bytes OBSOLETE_bzip2_data = 5 [deprecated=true]; // Don't reuse this tag number.
+    //bytes OBSOLETE_bzip2_data = 5 [deprecated=true]; // Don't reuse this tag number.
 
     // For LZ4 compressed data (optional)
     bytes lz4_data = 6;

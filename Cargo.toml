@@ -13,4 +13,4 @@ edition = "2021"
 quick-protobuf = "0.8"
 
 [build-dependencies]
-pb-rs = "0.9.1"
+pb-rs = "0.10.0"

@@ -12,6 +12,8 @@ fn main() {
     let protos: Vec<_> = PROTOS.iter().map(|p| in_dir.join(p)).collect();
     let includes: Vec<_> = ["src/protos"].iter().map(PathBuf::from).collect();
     std::fs::create_dir_all(&out_dir).unwrap();
-    let config_builder = ConfigBuilder::new(&protos, None, Some(&out_dir), &includes).unwrap();
+    let config_builder = ConfigBuilder::new(&protos, None, Some(&out_dir), &includes)
+        .unwrap()
+        .add_deprecated_fields(true);
     FileDescriptor::run(&config_builder.build()).unwrap();
 }
